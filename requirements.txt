@@ -1,0 +1,25 @@
+# ========================================
+# Requirements for Unified Detection System
+# ========================================
+
+# Core Deep Learning
+tensorflow>=2.10.0
+keras>=2.10.0
+
+# Computer Vision
+opencv-python>=4.8.0
+ultralytics>=8.0.0
+
+# Image Processing
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# GUI
+tk
+
+# Utilities
+pathlib2>=2.3.7
+
+# Optional: Performance boost
+# tensorflow-gpu>=2.10.0  # Uncomment for GPU support
+# opencv-contrib-python>=4.8.0  # Extra OpenCV features
