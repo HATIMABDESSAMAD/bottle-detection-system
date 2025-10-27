@@ -4,7 +4,6 @@
 [![OpenCV](https://img.shields.io/badge/opencv-4.0+-green.svg)](https://opencv.org/)
 [![TensorFlow](https://img.shields.io/badge/tensorflow-2.0+-orange.svg)](https://tensorflow.org/)
 [![YOLO](https://img.shields.io/badge/YOLO-v8-red.svg)](https://ultralytics.com/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.txt)
 
 Un système de détection en temps réel utilisant l'intelligence artificielle pour détecter les bouteilles, identifier la présence de bouchons et classifier les marques.
 
@@ -168,11 +167,7 @@ Pour plus d'aide, utilisez `python main.py --debug` pour des logs détaillés.
 - **Discussions** : [GitHub Discussions](https://github.com/HATIMABDESSAMAD/bottle-detection-system/discussions)
 - **Documentation** : Consultez ce README et les commentaires dans le code
 
-## 📄 Licence
-
-Ce projet est sous licence MIT - voir le fichier [LICENSE.txt](LICENSE.txt) pour plus de détails.
-
-## 🙏 Remerciements
+##  Remerciements
 
 - **OpenCV** pour les outils de vision par ordinateur
 - **YOLO/Ultralytics** pour la détection d'objets
