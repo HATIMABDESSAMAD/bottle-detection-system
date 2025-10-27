@@ -12,15 +12,11 @@ from pathlib import Path
 BASE_DIR = Path(__file__).parent
 PROJECT_ROOT = BASE_DIR.parent
 
-# Model paths
-MODELS_DIR = BASE_DIR / "models"
-MODELS_DIR.mkdir(exist_ok=True)
-
-# YOLOv8 Models
+# YOLOv8 Models (external paths)
 BOTTLE_YOLO_MODEL = PROJECT_ROOT / "test" / "yolov8n.pt"  # For bottle detection (box_bottle)
 CAP_YOLO_MODEL = PROJECT_ROOT / "Bottle-Bottle-Cap-Detection-System-main - Copie" / "best.pt"  # For cap detection
 
-# ResNet Brand Classifier (compatible)
+# ResNet Brand Classifier (external paths)
 BRAND_CLASSIFIER_MODEL = PROJECT_ROOT / "test" / "bottle_recognition_system" / "models" / "compatible_classifier.h5"
 BRAND_CLASSES_JSON = PROJECT_ROOT / "test" / "bottle_recognition_system" / "models" / "compatible_classifier_classes.json"
 
@@ -158,7 +154,7 @@ def get_model_path(model_name: str) -> Path:
         'cap_yolo': CAP_YOLO_MODEL,
         'brand_classifier': BRAND_CLASSIFIER_MODEL
     }
-    return paths.get(model_name, MODELS_DIR / model_name)
+    return paths.get(model_name, BASE_DIR / model_name)
 
 def validate_models() -> dict:
     """

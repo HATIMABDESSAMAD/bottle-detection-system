@@ -84,7 +84,6 @@ python main.py --config custom_config.py
 
 ```
 unified_detection_app/
-├── 📁 models/              # Modèles IA (YOLO, TensorFlow)
 ├── 📁 outputs/             # Résultats (vidéos, screenshots, logs)
 ├── 📄 detection_pipeline.py # Pipeline principal de détection
 ├── 📄 interface.py         # Interface graphique Tkinter
